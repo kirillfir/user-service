@@ -1,0 +1,19 @@
+# Node
+node_modules/
+package-lock.json
+npm-debug.log*
+
+# Build
+dist/
+coverage/
+
+# Env
+.env
+.env.*
+!.env.example
+
+# IDE/OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
