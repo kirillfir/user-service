@@ -7,7 +7,7 @@ const { Pool } = pg;
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
 });
-
+ 
 
 // удобный хелпер для запросов 
 export const q = (text, params) => pool.query(text,params);
