@@ -1,3 +1,4 @@
+Рекомендуется читать как CODE.
 # User Service — Test Task (Node.js + Express + PostgreSQL)
 
 Реализуется сервис управления пользователями с базовыми функциями.
