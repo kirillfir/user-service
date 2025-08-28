@@ -61,7 +61,7 @@ router.get('/', auth, requireAdmin, async (req, res) => {
   }
 });
 
-// PATCH /api/users/:id/role — смена роли (только админ)
+// PATCH /api/users/:id/role — смена роли пользователя (только админ) 
 router.patch('/:id/role', auth, async (req, res) => {
   try {
     if (req.user.role !== 'admin') {

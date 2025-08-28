@@ -13,7 +13,7 @@ import { errorMiddleware } from './middlewares/error.middleware.js';
 const app = express();
 
 // Подключаем «сервиски» (middlewares)
-app.use(express.json()); // парсим JSON-тела запросов
+app.use(express.json({ limit: '100kb' })); // ограничиваем размер JSON-тел запросов
 app.use(helmet());       // безопасные заголовки
 app.use(morgan('dev'));  // красивые логи
 
@@ -29,5 +29,7 @@ app.use('/api/users', usersRoutes);
 
 // Единый обработчик ошибок — ставим последним
 app.use(errorMiddleware);
+
+
 
 export default app;
